@@ -279,6 +279,7 @@ function nodeInserted(e) {
 	".chatmsgwrapper { border: none !important; }",
     "#flash { z-index: 1 !important; }",
 	".logwrapper { left: 2.5em !important; }",
+	"#adwrapper { display: none !important; }",
 	".controlwrapper { margin-left: 436px !important; margin-right: 458px !important; position: absolute !important; top: 629px !important; bottom: 0px !important;}",
 	"#mobilesitenote { display: none !important; }",
 	"#introtext { display: none !important; }",

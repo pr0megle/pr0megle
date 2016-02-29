@@ -330,9 +330,9 @@ var images = document.getElementsByTagName ("img");
 var x=0;
 while(x<images.length)
 {
-	if(images[x].src == "http://i.imgur.com/UJY3rws.png")
+	if(images[x].src == "http://www.omegle.com/static/translogo.png")
 	{
-		images[x].src = "https://github.com/pr0megle/pr0megle/blob/master/images/logo.png";
+		images[x].src = "http://i.imgur.com/UJY3rws.png";
 	}
 	if(images[x].src == "http://www.omegle.com/static/newchatbtn.png")
 	{

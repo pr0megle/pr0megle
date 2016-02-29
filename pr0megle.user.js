@@ -12,7 +12,7 @@
 
 var favicon_link_html = document.createElement('link');
 favicon_link_html.rel = 'icon';
-favicon_link_html.href = 'https://github.com/pr0megle/pr0megle/blob/master/images/favicon.png';
+favicon_link_html.href = 'http://i.imgur.com/KXn8Mco.png';
 favicon_link_html.type = 'image/x-icon';
 
 try { 
@@ -72,38 +72,38 @@ with( nextRoomBtn ) {
 flashwrapper.appendChild(nextRoomBtn, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder1.png';
+camborder.src = 'http://i.imgur.com/Vhz3zX5.png';
 camborder.id = "camborder1";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder2.png';
+camborder.src = 'http://i.imgur.com/WsoRMXs.png';
 camborder.id = "camborder2";
 camborder.style = "display: none";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder3.png';
+camborder.src = 'http://i.imgur.com/I1QV1Yb.png';
 camborder.id = "camborder3";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder4.png';
+camborder.src = 'http://i.imgur.com/5Vcr6bc.png';
 camborder.id = "camborder4";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder5.png';
+camborder.src = 'http://i.imgur.com/JAHsrX4.png';
 camborder.id = "camborder5";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder6.png';
+camborder.src = 'http://i.imgur.com/0AY6BtW.png';
 camborder.id = "camborder6";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
 
 var camborder = document.createElement('img');
-camborder.src = 'https://github.com/pr0megle/pr0megle/blob/master/images/camborder7.png';
+camborder.src = 'http://i.imgur.com/f9aP6OE.png';
 camborder.id = "camborder7";
 camborder.style = "display: none";
 flashwrapper.appendChild(camborder, flashwrapper.lastChild);
@@ -334,13 +334,13 @@ var images = document.getElementsByTagName ("img");
 var x=0;
 while(x<images.length)
 {
-	if(images[x].src == "http://www.omegle.com/static/translogo.png")
+	if(images[x].src == "http://i.imgur.com/UJY3rws.png")
 	{
 		images[x].src = "https://github.com/pr0megle/pr0megle/blob/master/images/logo.png";
 	}
 	if(images[x].src == "http://www.omegle.com/static/newchatbtn.png")
 	{
-		images[x].src = "https://github.com/pr0megle/pr0megle/blob/master/images/newchat.png";
+		images[x].src = "http://i.imgur.com/P8dcy0O.png";
 	}
 	x=x+1;
 }

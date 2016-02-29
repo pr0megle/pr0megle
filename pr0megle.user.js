@@ -20,16 +20,15 @@ try {
 }
 catch(e) { }
 
-var openingMessage = GM_getValue("openingMessage", "Hey! How are you?"); //default opening message
-var lag = 500; //time delay before sending the message after it's been typed
+var openingMessage = GM_getValue("openingMessage", "Hey! How are you?");
+var lag = 500;
 
 function checkForStatus() {
-    if (document.getElementsByClassName("logitem").length == 1) { //only go past this if there exists only one message, usually the 'now chatting' message		
-        if (openingMessageEnabled()) { //if opening message has been enabled
+    if (document.getElementsByClassName("logitem").length == 1) {	
+        if (openingMessageEnabled()) {
             if ($(".logitem").text() == "You're now chatting with a random stranger. Say hi!") {
-                //new conversation has started so now we need to send opening message
-                document.getElementsByClassName("chatmsg")[0].value = openingMessage; // adding the message to chat box
-                var t = setTimeout(function () { //making enter be clicked with a timer, with the default 'lag'
+                document.getElementsByClassName("chatmsg")[0].value = openingMessage;
+                var t = setTimeout(function () {
                     document.getElementsByClassName("sendbtn")[0].click();
                 }, lag);
             }
@@ -58,7 +57,7 @@ divOpeningMessage.style.borderRadius = "0px 0px 0px 0px";
 divOpeningMessage.style.width = "147px";
 divOpeningMessage.style.zIndex = "6";
 divOpeningMessage.style.fontFamily = "Calibri";
-divOpeningMessage.innerHTML = '<input style="float:left;" id=oac-openingmessage type=checkbox><label for=oac-openingmessage style="float:left;" >Startmessage </label>  &nbsp; <div style="float: right; " class="edit"> [Edit] </div>'; //there are floats in here to make sure the divs don't use two lines. and also mandatory line spaces (&nbsp;)
+divOpeningMessage.innerHTML = '<input style="float:left;" id=oac-openingmessage type=checkbox><label for=oac-openingmessage style="float:left;" >Startmessage </label>  &nbsp; <div style="float: right; " class="edit"> [Edit] </div>';
 flashwrapper.appendChild(divOpeningMessage, flashwrapper.lastChild);
 
 var nextRoomBtn = document.createElement( 'input' );
@@ -257,10 +256,6 @@ function nodeInserted(e) {
     "#snapshotBtn1 { position: fixed; right: 328px; top: 549px; width: 130px; background-color: #444; border: 0px; -moz-border-radius: 15px; -webkit-border-radius: 5px; padding: 2px; color: #a0aaaa; }",
     "#snapshotBtn2 { position: fixed; right: 328px; top: 549px; width: 130px; background-color: #444; border: 0px; -moz-border-radius: 15px; -webkit-border-radius: 5px; padding: 2px; color: #a0aaaa; }",
     "#nextRoomBtn { position: fixed; right: 8px; top: 474px; width: 312px; height: 94px;background-color: #444; border: 0px; -moz-border-radius: 15px; -webkit-border-radius: 5px; padding: 2px; color: #a0aaaa; }",
-    
-    // -moz-border-radius: 15px; -webkit-border-radius: 15px; border: 5px solid #009900; padding: 5px;
-    
-    
     "#flash { min-width: 428px; max-width: 428px; min-height: 695px; max-height: 695px; }",
 	"body { background-color: #161618 !important; color: #aaa; }",
 	"a:link { color: #888 !important; }",

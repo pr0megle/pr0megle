@@ -3,7 +3,7 @@
 // @namespace   pr0megle
 // @description pr0gram design for omegle.com
 // @include     http://www.omegle.com/
-// @version     1.0
+// @version     1.1
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @grant       unsafeWindow
 // @grant       GM_getValue

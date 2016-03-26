@@ -5,7 +5,7 @@
 // @include     http://www.omegle.com/
 // @include     http://corry.byethost13.com/
 // @include     http://corry.byethost13.com/index.php
-// @version     1.0
+// @version     1.3
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @grant       unsafeWindow
 // @grant       GM_getValue
